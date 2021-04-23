@@ -156,7 +156,7 @@ function createDownloadLink(blob) {
 		  };
 		  var fd=new FormData();
 		  fd.append("audio_data",blob, filename);
-		  xhr.open("POST","upload.php",true);
+		  xhr.open("POST","http://protected-hamlet-49872.herokuapp.com/upload.php",true);
 		  xhr.send(fd);
 			console.log("Uploaded recording!")
 	})
