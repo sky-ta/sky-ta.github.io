@@ -166,7 +166,7 @@ function createDownloadLink(blob) {
 	//add the li element to the ol
 	recordingsList.appendChild(li);
 
-	app.listen(process.env.PORT);
+	app.listen(process.env.PORT || 5000);
 
 	let port = process.env.PORT;
 		if (port == null || port == "") {
